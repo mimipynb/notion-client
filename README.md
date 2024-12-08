@@ -1,6 +1,6 @@
 # Notion Connection
 
-This script facilitates interaction with the Notion API, enabling users to dynamically update page sections during a user / agent session. 
+This script facilitates interaction with the Notion API, enabling users to dynamically update page sections during a user / Agent session. 
 Currently only supports `code` and `paragraph` blocks. 
 
 ## Prerequisites
@@ -14,6 +14,16 @@ Set up the `NOTION_TOKEN` environment variable with Notion API token.
   
 ## How to use:
 ```python
+
+# Dict storing page's id (value) with corresponding nickname (key) that is accessible by my Agent.
+NOTION_PAGES = {
+    "inbox": "13e69bb91d8480e19debc107cf4b698a", 
+    "dashboard": "hello", 
+    "programmer": "hello",
+    "projectManager": "hello"
+}
+
+# Example code to update a page
 mermaid_sample = """graph TD
     Start --> Task1[Do Something]
     Task1 --> Decision{Is it done?}
@@ -36,5 +46,5 @@ page.session_history.append(result)
 ## Extension / TODO:
 
 - Add logging
-- Integrate with FastAPI serving my agent’s action space
+- Integrate with FastAPI serving my Agent’s action space.
   
