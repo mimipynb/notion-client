@@ -40,11 +40,11 @@ result = NotionHandler.update_block(page.code_block[0], mermaid_sample)
 page.session_history.append(result)
 ```
 ---
-## Purpose 
+
+**Purpose**
 - A component for serving my Agent’s action space through a FastAPI interface
 
-## Extension / TODO:
-
+**Extension / Todo**
 - Add logging
 - Integrate with FastAPI serving my Agent’s action space.
   
